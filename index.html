@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Conversor</title>
+</head>
+<body>
+        <h1 class="titulo_geral">  <img class="img_titulo" src="./imagens/transferir.png" alt=""> Conversor de Unidades</h1>
+        <div class="Conversor"> 
+            <div class="temperatura_">
+                        <section class="Temperatura">
+                                <h2  class="titulo_temperatura">Temperatura <img src="./imagens/Temperatura.png" class="imagem_temperatura" alt="temperatura"></h2>
+                                <p class="p_temperatura">Converter de:</p>
+                                <select  class="opçoes" name="seletor" id="seletorId1_temperatura">
+                                    <option class="opçoes" value="Celsius">Celsius</option>
+                                    <option class="opçoes" value="Fahrenheit">Fahrenheit</option>
+                                </select>
+                                <input class="input_estilo" type="number" id="input_temperatura1">
+                                <p class="p_temperatura">Para:</p>
+                                        <select  class="opçoes" name="seletor" id="seletorId2_temperatura">
+                                            <option class="opçoes" value="Fahrenheit">Fahrenheit</option>
+                                            <section class="sectiontextos">
+                                            <option  class="opçoes" value="Celsius">Celsius</option>   
+                                            </select>    
+                                            <p class="ptexto" id="input_temperatura2"></p> 
+                                <button onclick="converterTemperatura()" id="botao.temp" class="botao">Converter</button>
+                        </section>
+                        <section class="volume">
+                            <h2  class="titulo_volume">Volume <img src="./imagens/balde.png" class="imagem_temperatura" height="35px" width="35px"></h2>
+                            <p class="p_volume">Converter de:</p>
+                            <select  class="opçoes" name="seletor" id="seletorId1_volume">
+                                <option class="opçoes" value="Litro">Litro</option>
+                                <option class="opçoes" value="Polegada cúbica">Polegada cúbica</option>
+                            </select>
+                            <input class="input_estilo" type="number" id="input_volume_1">
+                            <p class="p_volume">Para:</p>
+                            <select  class="opçoes" name="seletor" id="seletorId2_volume">
+                                <option class="opçoes" value="Polegada cúbica">Polegada cúbica</option>
+                                <option class="opçoes"  value="Litro">Litro</option>
+                            </select>
+                            <p class="ptexto" id="input_Volume2"></p> 
+                            <button onclick="converterVolume()" class="botao">Converter</button>
+                    </section>
+              </div>
+              <div class="comprimento_">
+                    <section class="comprimento">
+                            <h2 class="titulo_comprimento">Comprimento <img src="./imagens/Comprimento.png" class="imagem_temperatura" height="30px" width="30x"></h2>
+                            <p  class="p_comprimento">Converter de:</p>
+                            <select  class="opçoes" name="seletor" id="seletorId1_comprimento">
+                                <option class="opçoes" value="Metros">Metros</option>
+                                <option class="opçoes" value="Pés">Pés</option>
+                            </select>
+                            <input class="input_estilo" type="number" id="input_comprimento_1">
+                            <p  class="p_comprimento">Para:</p>
+                            <select  class="opçoes" name="seletor" id="seletorId2_comprimento">
+                                <option class="opçoes" value="Pés">Pés</option>
+                                <option class="opçoes" value="Metros">Metros</option>
+                            </select>
+                            <p class="ptexto" id="input_comprimento2"></p> 
+                            <button onclick="converterComprimento()" class="botao">Converter</button>
+                    </section>
+                    <section class="Tempo">
+                        <h2 class="titulo_tempo">Tempo <img src="./imagens/relogio2.png" class="imagem_temperatura" height="40px" width="40px"></h2>
+                        <p class="p_tempo">Converter de:</p>
+                        <select  class="opçoes" name="seletor" id="seletorId1_tempo">
+                            <option class="opçoes" value="Minutos">Minutos</option>
+                            <option class="opçoes"  value="Horas">Horas</option>
+                        </select>
+                        <input class="input_estilo" type="number" id="input_tempo_1">
+                        <p class="p_tempo">Para:</p>
+                        <select  class="opçoes" name="seletor" id="seletorId2_tempo">
+                            <option class="opçoes"  value="Horas">Horas</option>
+                            <option class="opçoes" value="Minutos">Minutos</option>
+                        </select>
+                        <p class="ptexto" id="input_tempo2"></p> 
+                        <button onclick="converterTempo()" class="botao">Converter</button>
+                 </section>
+              </div>
+              <div class="peso_">
+                    <section class="Peso">
+                        <h2 class="titulo_peso">Peso <img src="./imagens/Peso.png" class="imagem_temperatura" height="35px" width="35px"></h2>
+                        <p class="p_peso">Converter de:</p>
+                        <select  class="opçoes" name="seletor" id="seletorId1_Peso">
+                            <option  class="opçoes" value="Libra">Libra</option>
+                            <option class="opçoes" value="Quilograma">Quilograma</option>
+                        </select >
+                        <input class="input_estilo" type="number" id="input_peso_1"> 
+                        <p class="p_peso">Para:</p>
+                        <select  class="opçoes"  name="seletor" id="seletorId2_Peso">
+                            <option class="opçoes"  value="Quilograma">Quilograma</option>
+                            <option class="opçoes" value="Libra">Libra</option>
+                        </select>
+                        <p class="ptexto" id="input_peso2"></p> 
+                        <button onclick="converterPeso()" class="botao">Converter</button>
+                 </section>
+                 <section class="Armz_dados">
+                    <h2 class="titulo_Armz_dados">Armazenamento de dados <img src="./imagens/pc.png" class="imagem_temperatura" height="35px" width="35px"></h2>
+                    <p class="p_dados">Converter de:</p>
+                    <select  class="opçoes" name="seletor" id="seletorId1_Armz_dados">
+                        <option class="opçoes" value="Gigabyte">Gigabyte</option>
+                        <option class="opçoes" value="Terabyte">Terabyte</option>
+                    </select>
+                    <input class="input_estilo" type="number" id="inputId1_dados"> 
+                    <p class="p_dados">Para:</p>
+                    <select  class="opçoes" name="seletor" id="seletorId2_Armz_dados">
+                        <option class="opçoes" value="Terabyte">Terabyte</option>
+                        <option class="opçoes" value="Gigabyte">Gigabyte</option>
+                    </select>
+                    <p class="ptexto" id="input_dados2"></p> 
+                    <button onclick=" converterArmzDados()" class="botao">Converter</button>
+             </section>
+             </div> 
+        </div>
+<script src="app.js"></script>
+</body>
+</html>
